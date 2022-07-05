@@ -35,6 +35,12 @@ namespace TheTree
             {
                 SshClient client = new SshClient("212.109.220.171", Port, "root", "SJbmj0BKbm8I");
                 client.Connect();
+                //Krypton.Toolkit.KryptonListView aa = new Krypton.Toolkit.KryptonListView("22");
+                //logListViewitem logv = new logListView("11");
+                //logListView.Items.Add("Соединение с сервером успешно");
+                ListViewItem logv = new ListViewItem(DateTime.Now.ToString());
+                logv.SubItems.Add("Соединение с сервером успешно");
+                logListView.Items.Add(logv);
             }
             catch (Exception eer)
             {
@@ -51,6 +57,11 @@ namespace TheTree
         private void kryptonTableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

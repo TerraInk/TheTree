@@ -33,14 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Krypton.Navigator, Version=65.22.4.94, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Krypton.Navigator.65.22.4.94\lib\net472\Krypton.Navigator.dll</HintPath>
+    <Reference Include="Krypton.Navigator, Version=65.22.6.152, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Navigator.65.22.6.152\lib\net472\Krypton.Navigator.dll</HintPath>
     </Reference>
-    <Reference Include="Krypton.Ribbon, Version=65.22.4.94, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Krypton.Ribbon.65.22.4.94\lib\net472\Krypton.Ribbon.dll</HintPath>
+    <Reference Include="Krypton.Ribbon, Version=65.22.6.152, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Ribbon.65.22.6.152\lib\net472\Krypton.Ribbon.dll</HintPath>
     </Reference>
-    <Reference Include="Krypton.Toolkit, Version=65.22.4.94, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Krypton.Toolkit.65.22.4.94\lib\net472\Krypton.Toolkit.dll</HintPath>
+    <Reference Include="Krypton.Toolkit, Version=65.22.6.152, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Toolkit.65.22.6.152\lib\net472\Krypton.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="Renci.SshNet, Version=2021.10.1.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
       <HintPath>..\packages\Core.Renci.SshNet.2021.10.2\lib\net40\Renci.SshNet.dll</HintPath>

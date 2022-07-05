@@ -42,21 +42,22 @@ namespace TheTree
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.kryptonNavigator1 = new Krypton.Navigator.KryptonNavigator();
             this.pgMain = new Krypton.Navigator.KryptonPage();
-            this.pgGroup = new Krypton.Navigator.KryptonPage();
             this.kryptonSplitContainer1 = new Krypton.Toolkit.KryptonSplitContainer();
             this.kryptonSplitContainer2 = new Krypton.Toolkit.KryptonSplitContainer();
-            this.kryptonSplitContainer3 = new Krypton.Toolkit.KryptonSplitContainer();
             this.kryptonTreeView1 = new Krypton.Toolkit.KryptonTreeView();
             this.kryptonDataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
+            this.kryptonSplitContainer3 = new Krypton.Toolkit.KryptonSplitContainer();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.kryptonListView1 = new Krypton.Toolkit.KryptonListView();
+            this.pgGroup = new Krypton.Navigator.KryptonPage();
+            this.logListView = new System.Windows.Forms.ListView();
+            this.dt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.eventss = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mnuMain.SuspendLayout();
             this.kryptonToolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator1)).BeginInit();
             this.kryptonNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pgMain)).BeginInit();
             this.pgMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pgGroup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer1.Panel1)).BeginInit();
             this.kryptonSplitContainer1.Panel1.SuspendLayout();
@@ -69,14 +70,15 @@ namespace TheTree
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer2.Panel2)).BeginInit();
             this.kryptonSplitContainer2.Panel2.SuspendLayout();
             this.kryptonSplitContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer3.Panel1)).BeginInit();
             this.kryptonSplitContainer3.Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer3.Panel2)).BeginInit();
             this.kryptonSplitContainer3.Panel2.SuspendLayout();
             this.kryptonSplitContainer3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pgGroup)).BeginInit();
             this.SuspendLayout();
             // 
             // mnuMain
@@ -111,6 +113,7 @@ namespace TheTree
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
             this.closeToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.closeToolStripMenuItem.Text = "Close";
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -199,18 +202,6 @@ namespace TheTree
             this.pgMain.ToolTipTitle = "Page ToolTip";
             this.pgMain.UniqueName = "7e6c170a32ea4737b32a1b4748bb9bf8";
             // 
-            // pgGroup
-            // 
-            this.pgGroup.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
-            this.pgGroup.Flags = 65534;
-            this.pgGroup.LastVisibleSet = true;
-            this.pgGroup.MinimumSize = new System.Drawing.Size(50, 50);
-            this.pgGroup.Name = "pgGroup";
-            this.pgGroup.Size = new System.Drawing.Size(910, 351);
-            this.pgGroup.Text = "Группы";
-            this.pgGroup.ToolTipTitle = "Page ToolTip";
-            this.pgGroup.UniqueName = "8881e8769e664cc6adfe8d5d15a91b06";
-            // 
             // kryptonSplitContainer1
             // 
             this.kryptonSplitContainer1.Cursor = System.Windows.Forms.Cursors.Default;
@@ -247,31 +238,9 @@ namespace TheTree
             // 
             this.kryptonSplitContainer2.Panel2.Controls.Add(this.kryptonDataGridView1);
             this.kryptonSplitContainer2.Panel2.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonSplitContainer2.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.HighProfile;
             this.kryptonSplitContainer2.Size = new System.Drawing.Size(910, 265);
             this.kryptonSplitContainer2.SplitterDistance = 303;
             this.kryptonSplitContainer2.TabIndex = 0;
-            // 
-            // kryptonSplitContainer3
-            // 
-            this.kryptonSplitContainer3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.kryptonSplitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonSplitContainer3.Location = new System.Drawing.Point(0, 0);
-            this.kryptonSplitContainer3.Name = "kryptonSplitContainer3";
-            // 
-            // kryptonSplitContainer3.Panel1
-            // 
-            this.kryptonSplitContainer3.Panel1.Controls.Add(this.pictureBox1);
-            this.kryptonSplitContainer3.Panel1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            // 
-            // kryptonSplitContainer3.Panel2
-            // 
-            this.kryptonSplitContainer3.Panel2.Controls.Add(this.kryptonListView1);
-            this.kryptonSplitContainer3.Panel2.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonSplitContainer3.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.HighProfile;
-            this.kryptonSplitContainer3.Size = new System.Drawing.Size(910, 128);
-            this.kryptonSplitContainer3.SplitterDistance = 342;
-            this.kryptonSplitContainer3.TabIndex = 0;
             // 
             // kryptonTreeView1
             // 
@@ -289,6 +258,27 @@ namespace TheTree
             this.kryptonDataGridView1.Size = new System.Drawing.Size(602, 265);
             this.kryptonDataGridView1.TabIndex = 0;
             // 
+            // kryptonSplitContainer3
+            // 
+            this.kryptonSplitContainer3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.kryptonSplitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonSplitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.kryptonSplitContainer3.Name = "kryptonSplitContainer3";
+            // 
+            // kryptonSplitContainer3.Panel1
+            // 
+            this.kryptonSplitContainer3.Panel1.Controls.Add(this.pictureBox1);
+            this.kryptonSplitContainer3.Panel1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            // 
+            // kryptonSplitContainer3.Panel2
+            // 
+            this.kryptonSplitContainer3.Panel2.Controls.Add(this.logListView);
+            this.kryptonSplitContainer3.Panel2.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonSplitContainer3.SeparatorStyle = Krypton.Toolkit.SeparatorStyle.HighProfile;
+            this.kryptonSplitContainer3.Size = new System.Drawing.Size(910, 128);
+            this.kryptonSplitContainer3.SplitterDistance = 342;
+            this.kryptonSplitContainer3.TabIndex = 0;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -298,19 +288,43 @@ namespace TheTree
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // kryptonListView1
+            // pgGroup
             // 
-            this.kryptonListView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonListView1.HideSelection = false;
-            this.kryptonListView1.ItemStyle = Krypton.Toolkit.ButtonStyle.ListItem;
-            this.kryptonListView1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonListView1.Name = "kryptonListView1";
-            this.kryptonListView1.OwnerDraw = true;
-            this.kryptonListView1.Size = new System.Drawing.Size(563, 128);
-            this.kryptonListView1.StateCommon.Item.Content.ShortText.MultiLine = Krypton.Toolkit.InheritBool.True;
-            this.kryptonListView1.StateCommon.Item.Content.ShortText.MultiLineH = Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.kryptonListView1.StateCommon.Item.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.kryptonListView1.TabIndex = 0;
+            this.pgGroup.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.pgGroup.Flags = 65534;
+            this.pgGroup.LastVisibleSet = true;
+            this.pgGroup.MinimumSize = new System.Drawing.Size(50, 50);
+            this.pgGroup.Name = "pgGroup";
+            this.pgGroup.Size = new System.Drawing.Size(910, 351);
+            this.pgGroup.Text = "Группы";
+            this.pgGroup.ToolTipTitle = "Page ToolTip";
+            this.pgGroup.UniqueName = "8881e8769e664cc6adfe8d5d15a91b06";
+            // 
+            // logListView
+            // 
+            this.logListView.Alignment = System.Windows.Forms.ListViewAlignment.Default;
+            this.logListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.dt,
+            this.eventss});
+            this.logListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.logListView.FullRowSelect = true;
+            this.logListView.GridLines = true;
+            this.logListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.logListView.HideSelection = false;
+            this.logListView.Location = new System.Drawing.Point(0, 0);
+            this.logListView.Name = "logListView";
+            this.logListView.Size = new System.Drawing.Size(563, 128);
+            this.logListView.TabIndex = 0;
+            this.logListView.UseCompatibleStateImageBehavior = false;
+            this.logListView.View = System.Windows.Forms.View.Details;
+            // 
+            // dt
+            // 
+            this.dt.Text = "Дата";
+            // 
+            // eventss
+            // 
+            this.eventss.Text = "События";
             // 
             // frmMain
             // 
@@ -332,7 +346,6 @@ namespace TheTree
             this.kryptonNavigator1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pgMain)).EndInit();
             this.pgMain.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pgGroup)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer1.Panel1)).EndInit();
             this.kryptonSplitContainer1.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer1.Panel2)).EndInit();
@@ -345,14 +358,15 @@ namespace TheTree
             this.kryptonSplitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer2)).EndInit();
             this.kryptonSplitContainer2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer3.Panel1)).EndInit();
             this.kryptonSplitContainer3.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer3.Panel2)).EndInit();
             this.kryptonSplitContainer3.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer3)).EndInit();
             this.kryptonSplitContainer3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pgGroup)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -378,7 +392,9 @@ namespace TheTree
         private Krypton.Toolkit.KryptonTreeView kryptonTreeView1;
         private Krypton.Toolkit.KryptonDataGridView kryptonDataGridView1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Krypton.Toolkit.KryptonListView kryptonListView1;
+        private System.Windows.Forms.ListView logListView;
+        private System.Windows.Forms.ColumnHeader dt;
+        private System.Windows.Forms.ColumnHeader eventss;
     }
 }
 
